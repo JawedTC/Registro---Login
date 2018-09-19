@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="error">
+		<span>Datos de ingreso no validos, intentelo de nuevo.</span>
+	</div>
+
+	<div class="login-box">
+		<img src="img/logo.png" class="avatar" alt="Login">
+		<h1>Registro</h1>
+		<form class="formlog" id="formlg" autocomplete="off">
+			<input type="text" placeholder="Username"  pattern="[A-Za-z0-9]{1,35}" required>
+			<input type="text" placeholder="Nombre"  pattern="[A-Za-z0-9]{1,35}" required>
+			<input type="text" placeholder="Correo"  pattern="[A-Za-z0-9]{1,35}" required>
+			<input type="password" id="password" placeholder="Clave" pattern="[A-Za-z0-9_-]{1,35}" required>
+
+				<label id="clave">Mostrar contraseña</label>
+    			<input type="checkbox" id="ver" class="ver" onChange="hideOrShowPassword()" />
+
+			<input type="submit" class="botonlg" value="Registrarse">
+			<a href="#">¿Ya tienes cuenta?</a>
+		</form>
+	</div>
+		
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
